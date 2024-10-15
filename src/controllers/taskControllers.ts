@@ -31,6 +31,8 @@ export class TaskController {  // O que está vindo do body --> é o corpo da p�
             // Mostre a seguinte mensagem para o usuário
             return res.status(200).json ('No tasks found')
           }
+
+          return res.status(200).json(result)
         }
 
     async readOneTask(req: Request, res: Response){
